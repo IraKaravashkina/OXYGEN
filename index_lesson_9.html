@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Макет сайта</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Good morning</h1>
+<header style=background:#0094ca;>
+    <div>
+        <img src="img/logo.jpg" class="/">
+        <p>
+            <strong>Единый<br> Центр Записи</strong>
+        </p>
+    </div>
+    <div>
+        <img src="img/phone.jpg" class="/">
+        <p>
+            <strong>80300 5000</strong>
+        </p>
+    </div>
+
+    <nav class="">
+        <div>
+            <a href="/">Главная</a>
+            <a href="/">Услуги<strong>&darr;</strong></a>
+            <a href="/">Клиники и кабинеты</a>
+            <a href="/">О нас</a>
+            <a href="/">Статьи</a>
+            <a href="/">FAQ</a>
+            <a href="/">Контакты</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <img src="img/banner.jpg" class="/">
+    <p>
+        Всю необходимую информацию о том, как и в каком центре<br>
+        сделать МРТ, КТ и рентген исследованиях, сравнить интересующие<br>
+        Вас клиники, цены на диагностику и порядок прохождения<br>
+        процедур. а также записаться на исследование можно по<br>
+        телефону 8 (812) 385-77-56
+    </p>
+    <p>
+        <strong>Оставьте свой номер, а мы<br>
+            Вам перезвоним</strong>
+    </p>
+    <form action="getForm.php" method="">
+        <input type="tel" name="tel" placeholder="+380">
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+</main>
 </body>
 </html>
