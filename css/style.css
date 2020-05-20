@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    background-color: #0094ca;
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+.header__container {
+    max-width: 1410px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Header phone */
+.header__phone {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: -5px;
+}
+.header__phone_number {
+    margin-left: 16px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.5;
+}
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Header menu */
+.header__menu {
+    display: flex;
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+.header__menu_item {
+    font-size: 21px;
+    color: #494848;
+    line-height: 1.25;
+    margin-left: 33px;
+    text-decoration: none;
+}
+.header__menu_item:hover {
+    text-decoration: underline;
+}
+.header__menu_item--active {
+    color: rgb(255, 255, 255);
+}
+.header__menu_item--arrow {
+    display: flex;
+    align-items: center;
+}
+.header__menu_item--arrow::after {
+    content: '';
+    background-image: url("../img/arrow-down-icon.png");
+    width: 14px;
+    height: 12px;
+    margin-left: 4px;
+}
+.header__sub_menu {
+    display: none;
+}
+
+/* Block logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.logo__text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.25;
+    text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    padding-left: 25px;
+}
+@media (max-width: 1250px) {
+    .header__container {
+        display: block;
+    }
+    .header__menu {
+        margin-top: 55px;
+    }
+    .header__phone {
+        margin-top: -45px;
+    }
+}
+@media (max-width: 1000px) {
+    .header__nav {
+        align-self: flex-start;
+    }
+    .header__menu {
+        flex-direction: column;
+    }
+    .header__menu_item {
+        margin-left: 0;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+}
+@media (max-width: 500px) {
+    .header__phone {
+        margin-top: 20px;
+    }
+    .header__right {
+        align-items: flex-start;
+    }
+    .header__menu {
+        margin-top: 25px;
+    }
+}
