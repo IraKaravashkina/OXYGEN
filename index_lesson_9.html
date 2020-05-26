@@ -41,9 +41,8 @@
         </nav>
     </div>
 </header>
-
-<img src="img/banner.jpg" alt="banner">
-<p>
+<div class="header__menu_banner">
+<p class="header__menu_text">
     Всю необходимую информацию о том, как и в каком центре<br>
     сделать МРТ, КТ и рентген исследованиях, сравнить интересующие<br>
     Вас клиники, цены на диагностику и порядок прохождения<br>
@@ -54,12 +53,12 @@
     <strong>Оставьте свой номер, а мы<br>
         Вам перезвоним</strong>
 </p>
-<form action="getForm.php" method="">
+<form action="" method="">
     <input type="tel" name="tel" placeholder="+380">
     <input type="submit" name="submit" value="Отправить">
 </form>
-</section>
-
+</div>
+<!--
 <div> style=background:#0065a1; class=""
     <img src="img/Vector%20Smart%20Object1.png" alt="стетоскоп">
     <p>
@@ -207,7 +206,7 @@
     <input type="button" value="Все кабинеты">
 </a>
 
-<section> <!--style=background:#d9d4d8; class=""-->
+<section> style=background:#d9d4d8; class=""
     <div>
         <h2>Последние статьи</h2>
         <img src="img/Layer%207.png" alt="Фото статьи">
@@ -272,7 +271,7 @@
         <button><img src="img/arrow-right.png" alt="arrow-right"></button>
     </div>
 </section>
-
+-->
 <footer>
     <div> style=background:#0094ca;
         <img src="img/Logo.png" alt="Logo">
@@ -305,8 +304,15 @@
             123, Main Road, New City,<br>
             My Country 123456
         </p>
-        <img src="img/social.png" alt="Icon">
     </div>
+
+<div class="social-icons">
+    <a href="#"class="fb-icon"></a>
+    <a href="#"class="gplus-icon"></a>
+    <a href="#"class="vk-icon"></a>
+    <a href="#"class="youtube-icon"></a>
+    <a href="#"class="in-icon"></a>
+</div>
 
     <div> style=background:#d9d4d8;
         <div>
@@ -335,7 +341,9 @@
             <p><strong>Enquiry Form</strong></p>
             <input type="text" placeholder="Name" required>
             <input type="tel" placeholder="Phone" required>
-            <p><textarea name="comment" cols="40" rows="5" placeholder="Message" required></textarea></p>
+            <p><label>
+                <textarea name="comment" cols="40" rows="5" placeholder="Message" required></textarea>
+            </label></p>
             <input type="submit" name="submit" value="SUBMIT">
         </form>
     </div>
