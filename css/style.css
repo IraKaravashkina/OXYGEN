@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Black', sans-serif;
 }
 .header {
     background-color: #0094ca;
@@ -7,7 +7,7 @@ body {
     padding-bottom: 20px;
 }
 .header__container {
-    max-width: 1410px;
+    max-width: 1440px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,7 +62,7 @@ body {
 }
 .header__menu_item--arrow::after {
     content: '';
-    background-image: url("../img/arrow-down-icon.png");
+    background-image: url("../img/arrow-down.png");
     width: 14px;
     height: 12px;
     margin-left: 4px;
@@ -120,3 +120,41 @@ body {
         margin-top: 25px;
     }
 }
+
+.submit {
+    margin-bottom: 588px;
+}
+/*banner*/
+.header__menu_banner{
+    background: url("../img/banner.jpg");
+    background-size: 1440px 100%;
+    background-position: center;
+    height: 457px;
+
+
+}
+.header__menu_text{
+
+}
+
+
+/*соцсети*/
+.social-icons{
+    background-image: url("../img/social.png");
+    background-repeat: no-repeat;
+    height: 98px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.2s ease-out;
+}
+.fb-icon{background-position: 0 0;}
+.fb-icon:hover{background-position: 0 -49px;}
+.gplus-icon{background-position: -50px 0;}
+.gplus-icon:hover{background-position: 0 -60px;}
+.vk-icon{background-position: -100px top;}
+.vk-icon:hover{background-position: 0 -110px;}
+.youtube-icon{background-position: -150px top;}
+.youtube-icon:hover{background-position: 0 -170px;}
+.in-icon{background-position: -200px top;}
+.in-icon:hover{background-position: 0 -210px;}
