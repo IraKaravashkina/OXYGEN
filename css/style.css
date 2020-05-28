@@ -130,20 +130,82 @@ body {
     background-size: 1440px 100%;
     background-position: center;
     height: 457px;
-
-
 }
 .header__menu_text{
-
+    margin-top: 0;
+    padding-top: 100px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 18px;
+    flex-direction: row;
+    text-align: right;
+}
+.clinic_card__banner{
+    text-align: right;
 }
 
+/* Block logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.logo__text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.25;
+    text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    padding-left: 25px;
+}
 
-/*соцсети*/
+/* Block clinic */
+.clinic_list {
+    padding: 20px 0;
+}
+.clinic_card {
+    max-width: 690px;
+    border: 3px solid #43b1d2;
+    padding: 20px;
+}
+.clinic_card__head {
+    display: flex;
+}
+
+/*footer*/
+footer {
+    font-family: 'Roboto Black', sans-serif;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+.footer__container {
+    background-color: #0094ca;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.arrow-left {
+    border-left-color: steelblue;
+    border-right: 0;
+}
+
+.footer__middle{
+    background-color: #d9d4d8;
+    max-width: 1440px;
+}
+.copyright{
+    justify-content: center;
+}
+
+/*footer соцсети*/
 .social-icons{
     background-image: url("../img/social.png");
     background-repeat: no-repeat;
     height: 98px;
-    width: 100px;
+    width: 300px;
     display: inline-block;
     margin-left: 10px;
     transition: all 0.2s ease-out;
@@ -158,3 +220,12 @@ body {
 .youtube-icon:hover{background-position: 0 -170px;}
 .in-icon{background-position: -200px top;}
 .in-icon:hover{background-position: 0 -210px;}
+
+
+.footer__copyright{
+    background-color: #0094ca;
+    height: 50px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
