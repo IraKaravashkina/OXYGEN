@@ -15,7 +15,11 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
-
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 /* Header phone________________________________________________________- */
 .header__phone {
     display: flex;
@@ -29,11 +33,6 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.5;
-}
-.header__right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 /* Header menu_________________________________________________________- */
@@ -62,7 +61,7 @@ body {
 }
 .header__menu_item--arrow::after {
     content: '';
-    background-image: url("../img/arrow-down.png");
+    background-image: url("img/arrow-down.png");
     width: 14px;
     height: 12px;
     margin-left: 4px;
@@ -126,7 +125,7 @@ body {
 }
 /*banner____________________________________________________________________*/
 .header__menu_banner{
-    background: url("../img/banner.jpg");
+    background: url("img/banner.jpg");
     background-size: 1440px 100%;
     background-position: center;
     height: 457px;
@@ -266,24 +265,36 @@ footer {
 }
 /*footer соцсети_______________________________________*/
 .social-icons{
-    background-image: url("../img/social.png");
-    background-repeat: no-repeat;
-    height: 98px;
-    width: 300px;
+    background-image: url("img/social.png");
     display: inline-block;
-    margin-left: 120px;
-    transition: all 0.2s ease-out;
+    height: 25px;
+    width: 15px;
+    margin: 5px;
+
 }
-.fb-icon{background-position: 0 0;}
-.fb-icon:hover{background-position: 0 -49px;}
-.gplus-icon{background-position: -50px 0;}
-.gplus-icon:hover{background-position: 0 -60px;}
-.vk-icon{background-position: -100px top;}
-.vk-icon:hover{background-position: 0 -110px;}
-.youtube-icon{background-position: -150px top;}
-.youtube-icon:hover{background-position: 0 -170px;}
-.in-icon{background-position: -200px top;}
-.in-icon:hover{background-position: 0 -210px;}
+.social-icons--fb{
+    background-position: -42px;
+    width: 35px;
+}
+
+.social-icons--gplus{
+    background-position: -107px;
+     width: 35px;
+}
+
+.social-icons--vk{
+    background-position: -150px;
+    width: 35px;
+}
+.social-icons--youtube{
+    background-position: -200px;
+    width: 35px;
+}
+.social-icons--in{
+    background-position: -250px;
+    width: 35px;
+}
+
 
 
 .footer__copyright{
