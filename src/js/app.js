@@ -1,3 +1,3 @@
-function test() {
-    console.log('test');
-}
+$(document).ready(function () {
+    console.log('app started');
+});
