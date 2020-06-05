@@ -304,22 +304,48 @@ template {
 [hidden] {
   display: none; }
 
+/*обнуление*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 body {
   font-family: 'Roboto Black', sans-serif; }
 
-.header {
-  background-color: #0094ca;
-  padding-top: 24px;
-  padding-bottom: 20px; }
-
-.header__container {
-  max-width: 1440px;
+.container {
+  max-width: 1410px;
   margin: 0 auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; }
+
+.header {
+  background-color: #0094ca;
+  padding: 25px 16px; }
+
+.header__container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; }
 
 .header__right {
   display: flex;
@@ -330,21 +356,20 @@ body {
 .header__phone {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  margin-top: -5px; }
+  text-decoration: none; }
 
 .header__phone_number {
   margin-left: 16px;
   font-size: 20px;
   color: white;
   font-weight: bold;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-align: left; }
 
 /* Header menu_________________________________________________________- */
 .header__menu {
   display: flex;
   list-style: none;
-  margin: 15px 0 0 0;
   padding: 0; }
 
 .header__menu_item {
@@ -372,7 +397,8 @@ body {
   margin-left: 4px; }
 
 .header__sub_menu {
-  display: none; }
+  visibility: hidden;
+  /*display: none;*/ }
 
 /* Block logo _______________________________________________________*/
 .logo {
@@ -385,6 +411,7 @@ body {
   color: white;
   font-weight: bold;
   line-height: 1.25;
+  text-align: left;
   text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
   padding-left: 25px; }
 
@@ -493,8 +520,7 @@ body {
 
 /* Block clinic ________________________________________*/
 .clinic_list {
-  padding: 20px 0;
-  margin-left: 120px; }
+  padding: 20px 0; }
 
 .clinic_card {
   max-width: 690px;
@@ -549,32 +575,33 @@ footer {
 
 /*footer соцсети_______________________________________*/
 .social-icons {
-  background-image: url("img/social.png");
+  margin: 5px;
   display: inline-block;
-  height: 25px;
+  background-image: url("../../img/social.png");
   width: 15px;
-  margin: 5px; }
+  height: 25px; }
 
 .social-icons--fb {
-  background-position: -42px;
-  width: 35px; }
+  background-position-x: 0;
+  background-position-y: center; }
 
 .social-icons--gplus {
-  background-position: -107px;
-  width: 35px; }
+  width: 35px;
+  background-position: -42px 0; }
 
 .social-icons--vk {
-  background-position: -150px;
+  background-position: -107px 0;
   width: 35px; }
 
 .social-icons--youtube {
-  background-position: -200px;
+  background-position: -152px 0;
   width: 35px; }
 
 .social-icons--in {
-  background-position: -250px;
+  background-position: -202px 0;
   width: 35px; }
 
+/*footer copyright________________________________________________________________*/
 .footer__copyright {
   background-color: #0094ca;
   height: 50px;
@@ -582,3 +609,6 @@ footer {
   padding-top: 40px;
   color: white;
   justify-content: center; }
+
+.header {
+  background-color: #0094ca; }
