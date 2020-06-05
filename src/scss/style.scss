@@ -298,9 +298,13 @@ footer {
 .social-icons{
     margin: 5px;
     display: inline-block;
-    background-image: url("./img/social.png");
+    background-image: url("../../img/social.png");
     width: 15px;
     height: 25px;
+}
+.social-icons--fb{
+    background-position-x: 0;
+    background-position-y: center;
 }
 .social-icons--gplus{
     width: 35px;
@@ -311,7 +315,7 @@ footer {
     width: 35px;
 }
 .social-icons--youtube{
-    background-position: -160px 0;
+    background-position: -152px 0;
     width: 35px;
 }
 .social-icons--in{
