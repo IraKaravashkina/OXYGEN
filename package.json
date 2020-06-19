@@ -4,6 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
+    "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,10 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1",
     "readable-stream": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
