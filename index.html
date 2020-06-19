@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,19 +11,19 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__container">
+    <div class="header__container container">
         <figure class="logo">
-            <img src="img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
+            <img src="src/logo/img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
             <figcaption class="logo__text">Единый<br>Центр Записи</figcaption>
         </figure>
         <div class="header__right"><a href="tel:803005000" class="header__phone">
-            <img src="img/phone-square.png" alt="Трубка телефона" class="header__phone_icon">
+            <img src="src/header/img/header__phone.png" alt="Трубка телефона" class="header__phone_icon">
             <span class="header__phone_number">80300 5000</span></a>
         </div>
-        <nav class="headder__nav">
-            <ul class="headder__menu">
+        <nav class="header__nav">
+            <ul class="header__menu">
                 <li><a class="header__menu_item header__menu_item--active" href="#">Главная</a></li>
-                <li><a class="header__menu_item header__menu_item--active" href="#">Услуги<img src="img/arrow-down.png"
+                <li><a class="header__menu_item header__menu_item--active" href="#">Услуги<img src="src/header/img/header__arrow.png"
                                                                                                alt="стрелка вниз"></a>
                     <ul class="header__sub_menu">
                         <li>МРТ</li>
@@ -40,37 +40,32 @@
         </nav>
     </div>
 </header>
-<div class="header__menu_banner">
-<p class="header__menu_text">
+<section class="banner">
+    <div class="banner__photo"><p class="banner__text">
     Всю необходимую информацию о том, как и в каком центре<br>
     сделать МРТ, КТ и рентген исследованиях, сравнить интересующие<br>
     Вас клиники, цены на диагностику и порядок прохождения<br>
     процедур. а также записаться на исследование можно по<br>
-    телефону 8 (812) 385-77-56
-   <h1 class="header__menu_text"<strong>Оставьте свой номер, а мы<br>
-    Вам перезвоним</strong>
-</p>
-
-<form class="clinic_card__banner">
-    <span class="clinic_card__phone"><input type="tel" name="tel" placeholder="+380"></span>
-    <button class="clinic_card__button">Отправить</button>
-</form>
-</div>
-
-
+    телефону 8 (812) 385-77-56<br></p>
+   <div class="banner__callback">Оставьте свой номер, а мы<br>Вам перезвоним</div>
+    <form class="banner__form"><input type="tel" name="tel" placeholder="+380"><wbr>
+        <input type="submit" value="Отправить"></form>
+    </div>
+</section>
 
 <div class="object">
+    <div class="object_container container">
 <div class="object1">
-    <img class="object_img" src="img/object1.png" alt="стетоскоп">
+    <img class="object_img" src="./dist/image/object/img/object1.png" alt="стетоскоп">
     <p class="object_text">
         <strong>Best Treatment</strong><br><br>
         Sed ut perspiciatis unde omnis iste natus<br>
         error sit voluptatem accusantium dolore-<br>
-        mque laudantium.<br>
+        emque laudantium.<br>
     </p>
 </div>
 <div class="object2">
-    <img class="object_img" src="img/object2.png" alt="телефон с плюсом">
+    <img class="object_img" src="./dist/image/object/img/object2.png" alt="телефон с плюсом">
     <p class="object_text">
         <strong>Emergency Help</strong><br><br>
         Sed ut perspiciatis unde omnis iste natus<br>
@@ -79,7 +74,7 @@
     </p>
 </div>
 <div class="object3">
-    <img class="object_img" src="img/object3.png" alt="медсестра">
+    <img class="object_img" src="./dist/image/object/img/object3.png" alt="медсестра">
     <p class="object_text">
         <strong>Medical Staff</strong><br><br>
         Sed ut perspiciatis unde omnis iste natus<br>
@@ -88,7 +83,7 @@
     </p>
 </div>
 <div class="object4">
-    <img class="object_img" src="img/object4.png" alt="машинка">
+    <img class="object_img" src="./dist/image/object/img/object4.png" alt="машинка">
     <p class="object_text">
         <strong>Qualified Doctors</strong><br><br>
         Sed ut perspiciatis unde omnis iste natus<br>
@@ -96,21 +91,22 @@
         emque laudantium.<br>
     </p>
 </div>
+    </div>
 </div>
 
 <div>
-    <ul>
-        <li><a href="/">МРТ</a></li>
-        <li><a href="/">КТ</a></li>
-        <li><a href="/">РЕНТГЕН ИССЛЕДОВАНИЯ</a></li>
-    </ul>
+    <div class="tabs__titles">
+        <a href="/" class="tabs__title_btn--active">МРТ</a>
+        <a href="/" class="tabs__title_btn">КТ</a>
+        <a href="/" class="tabs__title_btn">РЕНТГЕН ИССЛЕДОВАНИЯ</a>
+    </div>
 </div>
 
 <main>
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -135,7 +131,7 @@
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -160,7 +156,7 @@
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -185,7 +181,7 @@
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -210,7 +206,7 @@
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -235,7 +231,7 @@
     <div class="clinic_list container">
         <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
             <div class="clinic_card__head">
-                <img src="./img/logo2.png" alt="" name="logo" class="clinic_card__logo">
+                <img src="src/clinic_card/img/clinic_card__best_doctor.png" alt="" name="logo" class="clinic_card__logo">
                 <div class="clinic_card__info">
                     <h5 itemprop="name">Название клиники</h5>
                     <p itemscope itemtype="http://schema.org/PostalAddress">
@@ -257,16 +253,12 @@
         </section>
     </div>
 </main>
+<div class="all__button"><a href="#"><input type="button" value="Все кабинеты"></a></div>
 
-<a class="button_card" href="/">
-    <input type="button" value="Все кабинеты">
-</a>
-
-<!--
-<section> style=background:#d9d4d8; class=""
+<section class="clinic_info">
     <div>
         <h2>Последние статьи</h2>
-        <img src="img/layer%207.png" alt="Фото статьи">
+        <img src="./src/clinic_info/img/doctor.png" alt="Фото статьи">
         <p>
             Что такое текст «рыба» знают все, кто работает<br>
             с версткой журналов, дизайном и разработкой<br>
@@ -291,8 +283,8 @@
             именно на оформление макета, заказчик будет<br>
             сосредоточен на изучении формы, дизайна, верстки.
         </p>
-        <button><img src="img/arrow-left.png" alt="arrow-left"></button>
-        <button><img src="img/arrow-right.png" alt="arrow-right"></button>
+        <button><img src="./src/clinic_info/img/arrow-left.png" alt="arrow-left"></button>
+        <button><img src="./src/clinic_info/img/arrow-right.png" alt="arrow-right"></button>
         <button>Читать подробнее</button>
     </div>
 </section>
@@ -324,17 +316,15 @@
             именно на оформление макета, заказчик будет<br>
             сосредоточен на изучении формы, дизайна, верстки.
         </p>
-        <button><img src="img/arrow-left.png" alt="arrow-left.png"></button>
-        <button><img src="img/arrow-right.png" alt="arrow-right"></button>
+        <button><img src="./src/clinic_info/img/arrow-left.png" alt="arrow-left.png"></button>
+        <button><img src="./src/clinic_info/img/arrow-right.png" alt="arrow-right"></button>
     </div>
 </section>
--->
-
 
 <footer>
     <div class="footer__container">
         <figure class="logo">
-            <img src="img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
+            <img src="src/logo/img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
             <figcaption class="logo__text">Единый<br>Центр Записи</figcaption>
         </figure>
     <div class="clinic_card__footer">
@@ -347,18 +337,18 @@
         <div class="footer__middle_column1">
         <ul>
             <li><p><strong>Get in Touch</strong><br></p></li>
-            <li><img src="img/icon1.png" alt="Icon">
+            <li><img src="src/footer/img/email.png" alt="Icon">
                 <p></li>
         </ul>
         free@psdfreebies.com<br>
         free@psdfreebies.com
         </p>
-        <img src="img/icon2.png" alt="Icon">
+        <img src="src/footer/img/mobile.png" alt="Icon">
         <p>
             +123 456 7890<br>
             +123 456 7890
         </p>
-        <img src="img/icon3.png" alt="Icon">
+        <img src="src/footer/img/map.png" alt="Icon">
         <p>
             123, Main Road, New City,<br>
             My Country 123456
@@ -410,5 +400,6 @@
     </section>
 
     <div class="footer__copyright">Copyright &#169; 2017.</div>
+</footer>
 </body>
 </html>
