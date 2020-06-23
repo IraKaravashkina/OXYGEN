@@ -5,11 +5,13 @@ var pipeline = require('readable-stream').pipeline;
 var imagemin = require('gulp-imagemin');
 
 
-exports.default = () => (
-    gulp.src('src/**/*.png')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/image'))
-);
+gulp.task('img', function () {
+    return pipeline(
+        gulp.src('src/**/*.png'),
+        imagemin(),
+        gulp.dest('dist/image')
+    );
+} ) ;
 
 gulp.task('js', function () {
     return pipeline(
@@ -25,10 +27,11 @@ gulp.task('scss', function () {
         .pipe(gulp.dest('./dist/css'));
 })
 
-gulp.task(('default'), gulp.series(['scss', 'js']));
+gulp.task(('default'), gulp.series(['scss', 'js', 'img']));
 
 gulp.task('watch', function () {
     gulp.watch ('src/**/*.scss', gulp.series(['scss']));
     gulp.watch('src/**/*.js', gulp.series(['js']));
+    gulp.watch('src/**/*.png', gulp.series(['img']));
 });
 
