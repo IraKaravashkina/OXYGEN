@@ -1,0 +1,27 @@
+.social-icons{
+  margin: 5px;
+  display: inline-block;
+  background-image: url("../img/social.png");
+  width: 15px;
+  height: 25px;
+  &--fb{
+    background-position-x: 0;
+    background-position-y: center;
+  }
+  &--gplus{
+    width: 35px;
+    background-position: -42px 0;
+  }
+  &--vk{
+    background-position: -107px 0;
+    width: 35px;
+  }
+  &--youtube{
+    background-position: -152px 0;
+    width: 35px;
+  }
+  &--in{
+    background-position: -202px 0;
+    width: 35px;
+  }
+}

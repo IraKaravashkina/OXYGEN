@@ -1,0 +1,64 @@
+footer {
+  font-family: 'Roboto Black', sans-serif;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+.footer__container {
+  background-color: #0094ca;
+  height: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+}
+/* Block logo */
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.logo__text {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.25;
+  text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  padding-left: 25px;
+}
+
+.footer__middle{
+  display:flex ;
+  justify-content: center;
+  padding: 0 110px;
+}
+.footer__middle_column1{
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+.footer__middle_column2{
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+.footer__middle_column3{
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+.footer__middle_column4{
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.arrow-left {
+  border-left-color: steelblue;
+  border-right: 0;
+}
+.clinic_card__button1{
+
+}

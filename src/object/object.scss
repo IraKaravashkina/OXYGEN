@@ -1,0 +1,39 @@
+.object{
+}
+.object_container {
+  display:flex ;
+  justify-content: center;
+  padding: 0 110px;
+
+
+}
+.object1{
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #0065a1;
+}
+
+.object2{
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #0094ca;
+}
+
+.object3{
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #4bc1e1;
+}
+
+.object4{
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #bbe4ee;
+}
+.object_img{
+  text-align: center;
+  padding-top: 50px;
+}
+.object_text{
+ padding: 10px;
+}

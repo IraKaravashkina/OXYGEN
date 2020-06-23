@@ -1,0 +1,30 @@
+.banner{
+  text-align: right;
+  background-color: #cbd4e6;
+}
+.banner__photo{
+  background-image: url("../../dist/image/banner/img/banner.png");
+  max-width: 1410px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 75% 100%;
+  background-position: top;
+}
+.banner__text{
+  text-align: right;
+  padding-right: 110px;
+  padding-top: 100px;
+  margin-top: 0 ;
+  font-size: 18px;
+  font-family: 'Roboto Black', sans-serif;
+}
+.banner__callback{
+  padding-right: 110px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.banner__form{
+  padding-right: 110px;
+  padding-bottom: 40px;
+}

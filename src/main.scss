@@ -1,0 +1,23 @@
+@import "node_modules/normalize.css/normalize";
+
+// Variables
+@import "_helpers/variables";
+
+// Reset
+@import "_helpers/global_reset";
+
+// Component
+@import "logo/logo";
+@import "header/header";
+@import "clinic_card/clinic_card";
+@import "banner/banner";
+@import "clinic_list/clinic_list";
+@import "container/conainers";
+@import "object/object";
+@import "footer/footer";
+@import "sprite/sprite";
+@import "copyright/copyright";
+
+
+
+//style
